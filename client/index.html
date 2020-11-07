@@ -6,7 +6,8 @@
   <title>Document</title>
   
 </head>
-<body>
+<!-- wait for the page to load, then run the get request to /task -->
+<body onload=items()>
   <h2>
     Welcome to the task list!
   </h2>
@@ -15,7 +16,12 @@
   <input id='input2' type="text" name="description" placeholder="description">
   <button onClick="postTask()"> add new task
   </button>
+  <div class="container">
+    <!-- This will populate with divs for each task after data is received from server in /tasks request -->
+  </div>
+
   <!-- Submit button that will run the fetch request for data -->
+ 
   <!-- connect to index.js -->
   <script src="index.js"> </script>
 </body>
